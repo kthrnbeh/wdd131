@@ -10,7 +10,7 @@ function changeTheme() {
     if (current == 'dark') {
         // code for changes to colors and logo
         body.style.backgroundColor = 'black';
-        logo.src = 'byui-logo-white.webp';
+        logo.src = 'byui-logo-white.png';
         body.style.color = 'white';
     } 
     else if (current == 'light') {
