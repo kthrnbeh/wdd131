@@ -4,4 +4,6 @@ console.log(title);
 
 title.textContent = 'Web Page Components';
 let topics = document.querySelectorAll('#topics');
-topics.style.color= 'red';
+//topics.style.color= 'red';
+
+document.getElementById('topics').style.color = 'purple';
