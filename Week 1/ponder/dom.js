@@ -21,3 +21,11 @@ para.classList.add('background');
 //document.querySelector('body').classList.add('background');
 let image=document.querySelector('img');
 image.setAttribute('src', 'images/web.png');
+
+
+let selectElem = document.getElementById('webdevlist');
+selectElem.addEventListener('change', function(){
+    let codeValue = selectElem.value;
+    console.log(codeValue);
+})
+                
