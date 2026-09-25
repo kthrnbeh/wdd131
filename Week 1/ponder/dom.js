@@ -17,3 +17,7 @@ let paragraphs = document.querySelectorAll('p');
 //para.style.backgroundColor = 'lightblue';
 
 para.classList.add('background');
+
+//document.querySelector('body').classList.add('background');
+let image=document.querySelector('img');
+image.setAttribute('src', 'images/web.png');
