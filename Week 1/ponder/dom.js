@@ -3,4 +3,5 @@ const title = document.querySelector('h1');
 console.log(title);
 
 title.textContent = 'Web Page Components';
-document.querySelector('#topics').style.color ='red';
+let topics = document.querySelectorAll('#topics');
+topics.style.color= 'red';
