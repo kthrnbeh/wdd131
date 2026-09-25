@@ -7,3 +7,7 @@ let topics = document.querySelectorAll('#topics');
 //topics.style.color= 'red';
 
 document.getElementById('topics').style.color = 'purple';
+
+let list=document.querySelector('list');
+
+list.style.border = '3px solid black';
