@@ -22,6 +22,8 @@ function changeTheme() {
     else {
         // code for changes to colors and logo
         body.style.backgroundColor = 'white';
-    } 
+        logo.src = 'byui-logo-blue.webp';
+        body.style.color = 'black';
+    }   
 }           
                     
