@@ -60,6 +60,14 @@ footer {
     nav a{
         display:inline;
     }
+    nav{
+        text-align: right;
+    }
 }
-          
+@media screen and (min-width: 1000px){
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}  
           
