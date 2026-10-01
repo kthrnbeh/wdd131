@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --blue: #1d4e89;
+  --text: #1f2933;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: Roboto, Arial, sans-serif;
+}
+
+header,
+main,
+footer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  color: white;
+  background-color: var(--blue);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+.menu-btn {
+  display: grid;
+  gap: 4px;
+  width: 2.25rem;
+  padding: 0.25rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+nav {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#logo {
+  display: none;
+}
+
+main {
+  min-height: 12rem;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  nav {
+    grid-column: auto;
+    justify-content: flex-end;
+  }
+}
