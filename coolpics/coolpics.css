@@ -3,4 +3,13 @@ img {
   height: 300px;
   object-fit: cover;
 }
-         
+h1,h2,button {
+    text-align: center;
+}      
+footer {
+  max-width: 1000px;
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: lightblue;
+}
