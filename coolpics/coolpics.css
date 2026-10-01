@@ -8,6 +8,28 @@ body {
     border: none;
     background-color: transparent;
 }
+header{
+  max-width: 1000px;
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #287bd1
+}
+
+main {
+    background-color: #ccc;
+    text-align: center;
+    padding: 1rem;
+}
+header,
+main,
+footer {
+  max-width: 1000px;
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: lightblue;
+}
 
 .gallery-image {
   width: 300px;
