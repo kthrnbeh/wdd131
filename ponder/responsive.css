@@ -8,16 +8,8 @@ body {
   background-color: #918b8b;
 }
 
-header {
-  position: relative;
-  padding: 1rem;
-  background-color: white;
-}
-
 h1 {
-  margin: 0;
-  text-align: center;
-  font-size: clamp(1.5rem, 4vw, 2rem);
+    text-align: center;
 }
 section {
   padding: 20px;
@@ -26,28 +18,24 @@ section {
   border: 1px solid #ccc;
 }
 nav a {
-  padding: 1rem;
-  color: black;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  border-top: 1px solid gray;
+    padding: 20px;
+    color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid gray;
 }
 .hide {
-  display: none;
+    display: none;
 }
 nav a:hover {
     text-decoration: none;
     color: #616061;
 }
 .menu-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  padding: 0.25rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 .bar1, .bar2, .bar3 {
     width: 30px;
@@ -67,33 +55,29 @@ nav a:hover {
 }
           
 footer {
-  text-align: center;
-  padding: 1rem;
+    text-align: center;
 }
 
 
 @media screen and (min-width: 700px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .menu-btn {
-    display: none;
-  }
-  nav.hide {
-    display: block;
-  }
-  nav a {
-    display: inline-block;
-    border-top: none;
-  }
-  nav {
-    text-align: right;
-  }
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu-btn{
+        display:none;
+    }
+    nav a{
+        display:inline;
+    }
+    nav{
+        text-align: right;
+    }
 }
 @media screen and (min-width: 1000px){
-  main {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}  
           
