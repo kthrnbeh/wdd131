@@ -1,9 +1,10 @@
-const btn=document.querySelector('.menu-btn');
-const menu=document.querySelector('nav');
+const btn = document.querySelector('.menu-btn');
+const menu = document.querySelector('nav');
 
-btn.addEventListener('click',toggleMenu);
+btn.addEventListener('click', toggleMenu);
 
-function toggleMenu(){
+function toggleMenu() {
     menu.classList.toggle('hide');
     btn.classList.toggle('change');
+    btn.setAttribute('aria-expanded', !menu.classList.contains('hide'));
 }
