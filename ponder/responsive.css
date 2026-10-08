@@ -20,6 +20,12 @@ section {
 nav a {
     padding: 20px;
     color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid gray;
+}
+.hide {
     display: none;
 }
 nav a:hover {
