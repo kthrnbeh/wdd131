@@ -1,5 +1,5 @@
 
-const menu = document.querySelector('nav');
+
 const btn = document.querySelector('.menu-btn');
 const menu = document.querySelector('nav');
 const gallery = document.querySelector('.gallery');

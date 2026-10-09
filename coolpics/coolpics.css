@@ -92,7 +92,7 @@ footer {
         justify-items: center;
     }
     .menu-btn{
-        display:none;
+        display:block;
     }
     nav a{
         display:block;
@@ -108,7 +108,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .menu-btn {
-    display: none;
+    display: block;
   }
 
   nav.hide {
