@@ -17,11 +17,13 @@ function toggleMenu() {
 gallery.addEventListener('click', openModal);
 
 function openModal(e) {
-    
+    if (e.target.tagName !== 'IMG') {
+    return;
+}
    const img=e.target;
    const src=img.getAttribute('src');
    const alt=img.getAttribute('alt');
-   const full = src.replace('thumbs', 'full');
+   const full = src.replace('sm', 'full');
    modalImage.src = full;
    modalImage.alt = alt;
    modal.showModal();

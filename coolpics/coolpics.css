@@ -76,6 +76,20 @@ h2{
     grid-column: 1/-1;
     text-align: center;
 }
+dialog {
+    position:relative;
+    boarder: none;
+    padding: 0;
+    background-color: transparent;
+}
+dialog::backdrop {
+    background-color: rgba(0,0,0,0.7);
+}
+dialog img {
+    display: block;
+    width: min(800px, 90vw);
+    
+}
 footer {
     max-width: 1000px;
     margin: 0 auto;
