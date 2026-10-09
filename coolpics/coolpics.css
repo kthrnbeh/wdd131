@@ -88,7 +88,15 @@ dialog::backdrop {
 dialog img {
     display: block;
     width: min(800px, 90vw);
-    
+    max-height: 80vh;
+    object-fit: contain;
+}
+.close-viewer {
+    position:absolute;
+    top: 0;
+    right: 0;
+    padding:0.25rem, 0.5rem;
+    cursor: pointer;
 }
 footer {
     max-width: 1000px;
