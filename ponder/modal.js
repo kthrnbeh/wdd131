@@ -11,6 +11,7 @@ function openModal(e) {
 const img =e.target;
 const src=img.getAttribute('src');
 const alt = img.getAttribute('alt');
+const full = src.replace('sm', 'full');
 
     
 }
