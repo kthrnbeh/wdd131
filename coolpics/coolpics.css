@@ -26,6 +26,9 @@ main {
     text-align: center;
     
 }
+.hide {
+  display: none;
+}
 nav {
   display: block;
   text-align: center;
@@ -59,6 +62,16 @@ figure {
 h1,button {
     text-align: center;
 }
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+          
 h2{
     grid-column: 1/-1;
     text-align: center;
@@ -82,9 +95,10 @@ footer {
         display:none;
     }
     nav a{
-        display:inline;
+        display:block;
     }
     nav{
+        text-align: center;
         display: block;
         text-align: right;
     }
@@ -93,6 +107,24 @@ footer {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+  .menu-btn {
+    display: none;
+  }
+
+  nav.hide {
+    display: block;
+  }
+
+  nav a {
+    display: inline-block;
+    color: white;
+    margin: 0 1rem;
+  }
+
+  nav {
+    text-align: center;
+  }
+}
 }
 @media screen and (min-width: 1000px){
     .gallery{

@@ -1,8 +1,17 @@
 
+const menu = document.querySelector('nav');
+const btn = document.querySelector('.menu-btn');
+const menu = document.querySelector('nav');
 const gallery = document.querySelector('.gallery');
 const modal = document.querySelector('dialog');
 const modalImage = modal.querySelector('img');
 const closeButton = modal.querySelector('.close-viewer');
+
+btn.addEventListener('click',toggleMenu);
+
+function toggleMenu() {
+    menu.classList.toggle('hide');
+}
 
 // Event listener for opening the modal
 gallery.addEventListener('click', openModal);
