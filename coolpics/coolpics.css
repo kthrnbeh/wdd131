@@ -78,7 +78,7 @@ h2{
 }
 dialog {
     position:relative;
-    boarder: none;
+    border: none;
     padding: 0;
     background-color: transparent;
 }
@@ -139,6 +139,27 @@ footer {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+  .menu-btn{
+        display:block;
+        margin: 0 auto;
+        color: white;
+        font-size: 1.5rem;
+        
+    }
+    nav.hide{
+        display: none;
+    }
+    nav a{ 
+        display:block;
+        padding: 0.75rem;
+        text-decoration: none;
+        border-bottom: 1px solid white;
+    }
+    nav{
+        text-align: center;
+        display: block;
+        
+    }
 }
 @media screen and (min-width: 1000px) {
   .gallery {
