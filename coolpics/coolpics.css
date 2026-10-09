@@ -93,22 +93,38 @@ footer {
     }
     .menu-btn{
         display:block;
+        margin: 0 auto;
+        color: white;
+        font-size: 1.5rem;
+        
     }
     nav a{
         display:block;
+        padding: 0.75rem;
+        text-decoration: none;
+        border-bottom: 1px solid white;
     }
     nav{
         text-align: center;
         display: block;
-        text-align: right;
+        
+    }
+    nav.hide{
+        display: none;
     }
 }
 @media screen and (min-width: 700px) and (max-width: 999px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+@media screen and (min-width: 1000px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .menu-btn {
-    display: block;
+    display: none;
   }
 
   nav.hide {
@@ -117,21 +133,12 @@ footer {
 
   nav a {
     display: inline-block;
-    color: white;
     margin: 0 1rem;
+    padding: 0.5rem;
+    border-bottom: none;
   }
 
   nav {
     text-align: center;
   }
-}
-}
-@media screen and (min-width: 1000px){
-    .gallery{
-        
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        justify-items: center;
-    }
-}  
-          
+}      
