@@ -9,7 +9,8 @@ gallery.addEventListener('click', openModal);
 
 function openModal(e) {
     
-// Code to show modal  - Use event parameter 'e'   
+// Code to show modal  - Use event parameter 'e'  
+ 
     
 }
 // Close modal on button click
