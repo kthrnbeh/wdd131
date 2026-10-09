@@ -87,7 +87,7 @@ footer {
 
 @media screen and (max-width: 699px) {
     .gallery{
-        grid-template-columns: repeat(1fr);
+        grid-template-columns: 1fr;
         gap: 1rem;
         justify-items: center;
     }
