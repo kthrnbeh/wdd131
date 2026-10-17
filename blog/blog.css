@@ -76,12 +76,16 @@ footer{
         gap:20px;
     }
     .book-info {
-        border: right 1px solid #e6b58a;
-        padding-right:20px;
+        grid-column:1;
+        grid-row: 1;
+        border-right: right 1px solid #e6b58a;
+        padding-right:30px;
         
     }
     .book-content{
-       padding: left 10px;
+        grid: column 2px; ;
+        grid-row: 1;
+        padding: left 10px;
 
     }
 }
