@@ -53,6 +53,20 @@ header, footer {
 
 @media (min-width: 600px) {
     
+    .main-nav {
+        display:grid;
+        grid-template-columns: 100px 100px 100px;
+        justify-content: center;
+    }
+    .movie {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content:center;
+    }
+    .movie img{
+        grid-row: 1/6;
+        grid-column: 1/2;
 
+    }
 }
           
