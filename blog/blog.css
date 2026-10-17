@@ -62,26 +62,26 @@ header h1{
     font-size:0.9rem;
 }
 footer{
+    font-size: small;
     text-align:center;
     border-top: 1px solid #e6b58a;
-    padding:10px;
+    padding:5px;
 }
 
 @media (min-width: 600px) {
     
-    .main-nav {
+    .book{
         display:grid;
-        grid-template-columns: 100px 100px 100px;
-        justify-content: center;
+        grid-template-columns: 1fr 2fr;
+        gap:20px;
     }
-    .book {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content:center;
+    .book-info {
+        border: right 1px solid #e6b58a;
+        padding-right:20px;
+        
     }
-    .book img{
-        grid-row: 1/6;
-        grid-column: 1/2;
+    .book-content{
+       padding: left 10px;
 
     }
 }
