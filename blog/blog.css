@@ -30,12 +30,10 @@ header h1{
     text-decoration: none;
 }
 #book-list {
-    padding: 0 2rem;
+    padding: 1rem;
 }
 .book {
-    border: 2px solid #ccc;
-    padding: 1rem;
-    border-radius: 10px;
+   padding:1rem;
     max-width: 700px;
     margin: 20px auto;
 }
