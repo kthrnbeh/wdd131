@@ -37,6 +37,12 @@ header h1{
     max-width: 700px;
     margin: 20px auto;
 }
+.book-info {
+    text-align:right;
+    padding: 10px;
+
+}
+
 .book h2 {
     color: #b30059;
     font-size: 1.5rem;
