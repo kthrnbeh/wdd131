@@ -1,0 +1,87 @@
+/* Remove the browser's default spacing */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the entire page */
+body {
+  /* Choose a font */
+  /* Choose a background color */
+  /* Choose a text color */
+  /* Add spacing around the page */
+}
+
+/* Arrange the page header */
+header {
+  /* Decide how the header should be positioned */
+  /* Add spacing */
+  /* Add a border or background if desired */
+}
+
+/* Style the page title */
+h1 {
+  /* Choose the title size */
+  /* Choose the title alignment */
+}
+
+/* Style the navigation links */
+nav {
+  /* Decide how the links should be arranged */
+  /* Add spacing between the links */
+}
+
+nav a {
+  /* Choose a link color */
+  /* Remove or keep the underline */
+}
+
+/* Create the main layout */
+main {
+  /* Set a maximum width */
+  /* Center the main content */
+  /* Add spacing */
+}
+
+/* Style the book review article */
+article {
+  /* Add a background color */
+  /* Add inside spacing */
+  /* Add a border or rounded corners */
+}
+
+/* Style the book title */
+article h2 {
+  /* Choose the title size */
+  /* Choose the title alignment */
+}
+
+/* Style the book information */
+.movie-info {
+  /* Change this class name to .book-info in your HTML */
+  /* Choose the text style */
+}
+
+/* Style the book cover */
+article img {
+  /* Set a width */
+  /* Prevent the image from becoming too large */
+  /* Decide whether to center the image */
+}
+
+/* Style the review section */
+.review {
+  /* Add spacing above the review */
+  /* Decide how the text should be aligned */
+}
+
+/* Style the review heading */
+.review h3 {
+  /* Choose the heading size */
+}
+
+/* Style the footer */
+footer {
+  /* Add spacing */
+  /* Choose the text alignment */
+  /* Add a border or background if desired */
+}
