@@ -1,79 +1,72 @@
-/* Applies to the entire page */
+
 body {
-  /* Choose the page font */
-  /* Choose the background color */
-  /* Choose the text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
-
-/* Styles the top section of the page */
-header {
-  /* Add spacing inside the header */
-  /* Choose a background color */
-  /* Add a bottom border if you want one */
+header, footer {
+    background-color: #222;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
-
-/* Styles the main heading */
-h1 {
-  /* Choose the heading size */
-  /* Choose the text alignment */
-}
-
-/* Selects the navigation list */
 .main-nav {
-  /* Remove the bullet points */
-  /* Add spacing around the list */
-  /* Decide how the links should be arranged */
+    list-style: none;
+    padding: 0;
 }
-
-/* Selects each navigation link */
+.main-nav li {
+    padding: 8px;
+}
 .main-nav a {
-  /* Choose the link color */
-  /* Choose whether links have an underline */
-  /* Add spacing around each link */
+    color: #ffc107;
+    text-decoration: none;
 }
-
-/* Styles the main content area */
-#main-content {
-  /* Choose the maximum width */
-  /* Center the content */
-  /* Add spacing around the content */
+#book-list {
+    padding: 0 2rem;
 }
-
-/* Styles the book review */
 .book {
-  /* Choose a background color */
-  /* Add inside spacing */
-  /* Add a border */
-  /* Add rounded corners if desired */
+    border: 2px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 20px auto;
 }
-
-/* Styles the book title */
 .book h2 {
-  /* Choose the title size */
-  /* Choose the title alignment */
+    color: #b30059;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
 }
-
-/* Styles the book cover */
-.book img {
-  /* Choose the image width */
-  /* Make sure the image does not grow too large */
-  /* Decide whether to center the image */
-}
-
-/* Styles the date, age range, genre, and rating paragraphs */
 .book p {
-  /* Choose the spacing between paragraphs */
+    padding-left: 20px;
+}
+.book img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+#book-description {
+    grid-column: 1/3;
 }
 
-/* Styles the description paragraph */
-.book-description {
-  /* Choose the line height */
-  /* Add spacing above the description */
-}
+@media (min-width: 600px) {
+    
+    .main-nav {
+        display:grid;
+        grid-template-columns: 100px 100px 100px;
+        justify-content: center;
+    }
+    .book {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content:center;
+    }
+    .book img{
+        grid-row: 1/6;
+        grid-column: 1/2;
 
-/* Styles the bottom of the page */
-footer {
-  /* Add spacing */
-  /* Choose the text alignment */
-  /* Choose a background color or border */
+    }
 }
+          
