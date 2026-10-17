@@ -78,7 +78,7 @@ footer{
     .book-info {
         grid-column:1;
         grid-row: 1;
-        border-right: right 1px solid #e6b58a;
+        border-right:1px solid #e6b58a;
         padding-right:30px;
         
     }
