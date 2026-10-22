@@ -83,9 +83,9 @@ footer{
         
     }
     .book-content{
-        grid: column 2px; ;
+        grid-column: 2px; ;
         grid-row: 1;
-        padding: left 10px;
+        padding-left: 10px;
 
     }
 }
