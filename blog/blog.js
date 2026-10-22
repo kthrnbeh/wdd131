@@ -41,12 +41,12 @@ const articles = [
 ];
                 
 
- const movieList = document.querySelector('#movie-list');
+ const articleList = document.querySelector('#book-list');
 
-movies.forEach(movie => {
+movies.forEach(book => {
       // Code for going through each movie and creating content for that movie
   const article = document.createElement('article');
-  article.className = 'movie';
+  article.className = 'book';
 
 let html= `<article class="book">
           <div class="book-content">
