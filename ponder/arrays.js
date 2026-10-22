@@ -15,7 +15,7 @@ function listTemplate(step){
 };
 myList.innerHtml=stepsHtml.join('');
 
-let grades = {'A','B','C'};
+let grades = ['A', 'B', 'C'];
 let point;
 
 function convert(grade) {
