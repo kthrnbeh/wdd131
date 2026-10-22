@@ -44,26 +44,26 @@ const movies = [
     movies.forEach(movie => {
 
         // Code for going through each movie and creating content for that movie
-    
+        const movieList = document.querySelector('#movie-list');
+        let html=`<article class="movie">
+          <h2>${movie.title}</h2>
+          <img src=${movie.imgSrc} alt=${movie.imgAlt}>
+          <p><strong>Release Date:</strong> ${movie.date}</p>
+          <p><strong>Recommended Age:</strong> ${movie.ages}</p>
+          <p><strong>Genre:</strong> ${movie.genre}</p>
+          <p><strong>Rating:</strong> <span aria-label="5 out of 5 stars" role="img">${movie.stars}</span></p>
+          <p id="desc-spider-man">${movie.description}</p>
+        </article>`
+
+
+movieList.innerHTML=html;
     });
 
 
 
 
 
-const movieList = document.querySelector('#movie-list');
- const html=`<article class="movie">
-          <h2>Spider-Man: Into the Spider-Verse</h2>
-          <img src="https://wddbyui.github.io/wdd131/images/spiderman.png" alt="Miles Morales swinging through the city">
-          <p><strong>Release Date:</strong> Dec 14, 2018</p>
-          <p><strong>Recommended Age:</strong> 10+</p>
-          <p><strong>Genre:</strong> Action/Adventure</p>
-          <p><strong>Rating:</strong> <span aria-label="5 out of 5 stars" role="img">⭐⭐⭐⭐⭐</span></p>
-          <p id="desc-spider-man">Miles Morales becomes the Spider-Man of his reality and crosses paths with others from the multiverse.</p>
-        </article>`
 
-
-movieList.innerHTML=html;
 
 
 
