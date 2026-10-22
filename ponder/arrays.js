@@ -1,6 +1,6 @@
 //forEach
 const steps =['one','two','three']
-//steps.forEach(function(item)){
+//steps.forEach(function(item){
    // console.log(item);
 //}
 steps.forEach(showSteps);
@@ -8,18 +8,18 @@ function showSteps(step){
     console.log(step);
 };
 //.map
-let myList=document.querySelector('myList');
+let myList = document.querySelector('#myList');
 const stepHtml =steps.map(listTemplate);
 function listTemplate(step){
-    return `<li>$(step)</li>`
+    return `<li>${step}</li>`;
 };
-myList.innerHtml=stepsHtml.join('');
+myList.innerHTML = stepHtml.join('');
 
 let grades = ['A', 'B', 'C'];
-let point;
 let gpaPoints=grades.map(convert);
 
 function convert(grade) {
+    let points;
     switch (grade){
         case 'A':
             points = 4;
@@ -52,3 +52,17 @@ console.log(totalPoints);
 let gpaAverage=totalPoints/gpaPoints.length;
 console.log(gpaAverage);
 //.filter
+
+const words = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
+
+const shortWords =words.filter(function(word){
+    return word.length <6;
+})
+console.log(shortWords);
+
+const students = [
+    {last: 'Andrus', first: 'Aaron'},
+    {last: 'Masa', first:'Manny'},
+    {last: 'Tanda', first: 'Tamanda'}
+];
+                    
