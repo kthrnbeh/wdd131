@@ -59,6 +59,13 @@ const shortWords =words.filter(function(word){
     return word.length <6;
 })
 console.log(shortWords);
+//.indexOf
+const myArray=[12,34,21,54];
+const luckyNumber=21;
+let luckyIndex = myArray.indexOf(luckyNumber);
+console.log(luckyIndex);
+
+//dynamic content
 
 const students = [
     {last: 'Andrus', first: 'Aaron'},
