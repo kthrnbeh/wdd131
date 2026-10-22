@@ -41,4 +41,6 @@ function convert(grade) {
     }
     return points;
 }
+console.log(gpaPoints);
           
+//.reduce
