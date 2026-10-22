@@ -17,6 +17,7 @@ myList.innerHtml=stepsHtml.join('');
 
 let grades = ['A', 'B', 'C'];
 let point;
+let gpaPoints=grades.map(convert);
 
 function convert(grade) {
     switch (grade){
