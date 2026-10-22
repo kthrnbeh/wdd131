@@ -66,10 +66,21 @@ let luckyIndex = myArray.indexOf(luckyNumber);
 console.log(luckyIndex);
 
 //dynamic content
+let container=document.querySelector('#studentContainer');
 
 const students = [
     {last: 'Andrus', first: 'Aaron'},
     {last: 'Masa', first:'Manny'},
     {last: 'Tanda', first: 'Tamanda'}
 ];
+students.forEach(funtion(item)){
+    let name=document.createElement('div');
+    name.className='format';
+    let html =
+        <><span> ${item.first}</span>
+        <span> ${item.last}</span></>
+    name.innerHTML=html;
+    container.appendChild(name);
+ 
+}
                     
