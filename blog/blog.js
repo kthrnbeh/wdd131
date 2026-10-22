@@ -43,24 +43,24 @@ const articles = [
 
  const bookList = document.querySelector('#book-list');
 
-movies.forEach(book => {
+articles.forEach(book => {
       // Code for going through each movie and creating content for that movie
   const article = document.createElement('article');
   article.className = 'book';
 
-let html= `<article class="book">
+let html= `
           <div class="book-content">
             <h2>${book.title}</h2>
-            <img src=${book.imgSrc} alt=${book.imgAlt}>
+            <img src="${book.imgSrc}" alt="${book.imgAlt}">
             <p id="book-description">${book.description}</p>
           </div>
           <div class="book-info">
             <p><strong>${book.date}</strong> </p>
             <p><strong>${book.ages}</strong></p>
-            <p><strong>Fantasy</strong> ${book.genre}</p>
+            <p><strong>Genre</strong> ${book.genre}</p>
             <p><span aria-label="${book.stars.length} out of 5 stars" role="img">${book.stars}</span></p>
           </div>
-        </article>`
+        
           `;
 
   article.innerHTML = html;

@@ -58,7 +58,7 @@ header h1{
     display:block;
     margin: 0 auto;
 }
-#book-description {
+.book-description {
     font-size:0.9rem;
 }
 footer{
@@ -83,7 +83,7 @@ footer{
         
     }
     .book-content{
-        grid-column: 2px; ;
+        grid-column: 2; ;
         grid-row: 1;
         padding-left: 10px;
 
