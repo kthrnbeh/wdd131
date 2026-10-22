@@ -57,7 +57,7 @@ let html= `
           <div class="book-info">
             <p><strong>${book.date}</strong> </p>
             <p><strong>${book.ages}</strong></p>
-            <p><strong>Genre</strong> ${book.genre}</p>
+            <p><strong>${book.genre}</strong> </p>
             <p><span aria-label="${book.stars.length} out of 5 stars" role="img">${book.stars}</span></p>
           </div>
         
