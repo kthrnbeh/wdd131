@@ -50,15 +50,15 @@ movies.forEach(book => {
 
 let html= `<article class="book">
           <div class="book-content">
-            <h2>Septimus Heap Book One: Magyk</h2>
-            <img src="img/Magkycover2.jpg" alt="Picture of Septimus Heap Book One: Magyk">
-            <p id="book-description">If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.</p>
+            <h2>${book.title}</h2>
+            <img src=${book.imgSrc} alt=${book.imgAlt}>
+            <p id="book-description">${book.description}</p>
           </div>
           <div class="book-info">
-            <p><strong>July 5,2022</strong> </p>
-            <p><strong>10-14</strong></p>
-            <p><strong>Fantasy</strong> Action/Adventure</p>
-            <p><span aria-label="5 out of 5 stars" role="img">⭐⭐⭐⭐⭐</span></p>
+            <p><strong>${book.date}</strong> </p>
+            <p><strong>${book.ages}</strong></p>
+            <p><strong>Fantasy</strong> ${book.genre}</p>
+            <p><span aria-label="${book.stars.length} out of 5 stars" role="img">${book.stars}</span></p>
           </div>
         </article>`
           `;
