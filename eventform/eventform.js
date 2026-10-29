@@ -18,10 +18,7 @@ attendeeType.addEventListener('change',()=> {
         conditional.hidden=false;
         label.textContent = "Student I#";
         console.log("Student selected.")
-        if (input.value.length !==9){
-            console.log("Student I# must have 9 digits");
-
-        }
+       
     }
     else if (selectedType === "guest"){
         conditional.hidden =false;
@@ -41,7 +38,14 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   errors.textContent = "";
   output.textContent = "";
+    const selectedType = attendeeType.value;
 
+    if (selectedType === "student") {
+        if (input.value.length !== 9) {
+            console.log("Student I# must have 9 digits");
+        }
+    }
+   
   // TODO: Read the form values and validate the conditional input.
   // TODO: Put errors inside #errors and return early when validation fails.
   // TODO: If valid, display Ticket Created and the ticket details in #output.
