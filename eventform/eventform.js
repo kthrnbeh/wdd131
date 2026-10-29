@@ -12,7 +12,18 @@ const input =document.querySelector("#conditionalInput");
 // For Student, show a Student # input and require exactly 9 digits.
 // For Guest, show an Access Code input and require "EVENT131".
 attendeeType.addEventListener('change',()=> {
-    console.log("selection changed.")
+   const selectedType= attendeeType.value
+    console.log(selectedType)
+    if(selectedType ==='student'){
+        conditional.hidden=false;
+        console.log("Student selected.")
+    }
+    else if (selectedType === "guest"){
+        console.log("Guest Selected.")
+    }
+    else{
+        console.log("Please make a selection.")
+    }
 })
 
 // TODO: Set the date input's minimum to today, then validate that the chosen date
