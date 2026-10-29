@@ -39,15 +39,16 @@ form.addEventListener("submit", (event) => {
   errors.textContent = "";
   output.textContent = "";
     const selectedType = attendeeType.value;
+    const eventDate = form.eventDate.value;
 
-    if (selectedType === "student") {
-        if (input.value.length !== 9) {
-            console.log("Student I# must have 9 digits");
-        }
-    }
-   
-  // TODO: Read the form values and validate the conditional input.
-  // TODO: Put errors inside #errors and return early when validation fails.
-  // TODO: If valid, display Ticket Created and the ticket details in #output.
-  // TODO: Reset the form after a successful submission.
+   if (selectedType === "student" && input.value.length !== 9) {
+    errors.textContent = "Student I# must have 9 digits.";
+    return;
+}
+
+ if (isPastDate(eventDate)) {
+    output.textContent = "Please choose a later date.";
+    return;
+  }
+
 });
