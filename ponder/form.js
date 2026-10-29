@@ -52,7 +52,7 @@ form.addEventListener("submit", function (event) {
 
   // Validate the input
   // Let the user know to select at least one campus
-    if(selectedCampuses=== 0){
+    if(selectedCampuses.length=== 0){
       output.textContent="Please choose at least one campus";
       return;
     }
