@@ -36,9 +36,12 @@
       <div class="field">
         <label for="eventDate">Event Date</label>
         <input id="eventDate" name="eventDate" type="date" required>
-        <!-- TODO: In JavaScript, require this date to be later than today. -->
       </div>
-      <!-- TODO: Add a hidden div here for the Student # or Access Code input. -->
+      
+       <div class="field" id="conditionalField" hidden>
+            <label for="conditionalInput" id="conditionalLabel"> Student ID # </label>
+            
+       </div>
       <button class="full" type="submit">Create Ticket</button>
     </form>
     <!-- TODO: Display submission errors below the form. -->
