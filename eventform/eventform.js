@@ -31,8 +31,12 @@ attendeeType.addEventListener('change',()=> {
     }
 })
 
-// TODO: Set the date input's minimum to today, then validate that the chosen date
-// is later than today when the form is submitted.
+// Ensure they choose a date later than the current date
+function isPastDate(value) {
+  const today = new Date();
+  const chosen = new Date(value);
+  return chosen < today;
+}
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -45,9 +49,13 @@ form.addEventListener("submit", (event) => {
     errors.textContent = "Student I# must have 9 digits.";
     return;
 }
+    if (selectedType == 'guest' && input.value !==="EVENT131") {
+    errors.textContent = "Your error message";
+    return;
+}
 
  if (isPastDate(eventDate)) {
-    output.textContent = "Please choose a later date.";
+    errors.textContent = "Please choose a later date.";
     return;
   }
 
