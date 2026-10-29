@@ -18,7 +18,7 @@ attendeeType.addEventListener('change',()=> {
     if(selectedType ==='student' ){
         conditional.hidden=false;
         input.required=true;
-        label.textContent = "Student I#";
+        label.textContent = "Student #";
         console.log("Student selected.")
        
     }
@@ -52,10 +52,15 @@ form.addEventListener("submit", (event) => {
     const lastName = form.lastName.value.trim();
     const email = form.email.value.trim();
 
-   if (selectedType === "student" && input.value.length !== 9) {
-    errors.textContent = "Student I# must have 9 digits.";
-    return;
-}
+   if (selectedType === "student" ) {
+      // Requires exactly nine numeric digits.
+        const studentNumberPattern = /^\d{9}$/;
+        if (!studentNumberPattern.test(input.value.trim())) {
+            errors.textContent = "Student # must contain exactly 9 digits.";
+            return;
+            }
+        
+    }
     if (selectedType == 'guest' && input.value !=="EVENT131") {
     errors.textContent = "Invalid access code. Please enter EVENT131.";
     return;

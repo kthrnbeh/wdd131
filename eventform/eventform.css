@@ -40,7 +40,21 @@ button {
   background: #bfd2df;
   margin-top: 10px;
 }
+/* Added spacing for messages below the form. */
+#errors,
+#output {
+  margin-top: 1rem;
+}
 
+/* Displays validation messages. */
+#errors {
+  color: #111;
+}
+
+/* Adds spacing to the successful ticket information. */
+#output p {
+  margin: 0.5rem 0;
+}
 /* TODO: Add styling for the hidden Student/Guest field. */
 /* TODO: Add styling for error and successful-ticket messages. */
 
