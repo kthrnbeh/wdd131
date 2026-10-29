@@ -19,9 +19,11 @@ attendeeType.addEventListener('change',()=> {
         console.log("Student selected.")
     }
     else if (selectedType === "guest"){
+        conditional.hidden =false;
         console.log("Guest Selected.")
     }
     else{
+        conditional.hidden=true;
         console.log("Please make a selection.")
     }
 })
