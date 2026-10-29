@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Ticket</title>
+  <link rel="icon" href="favicon.ico">
+  <!-- Added the stylesheet link so the form uses eventform.css. -->
+  <link rel="stylesheet" href="eventform.css">
+  <script src="eventform.js" defer></script>
+</head>
+<body>
+  <main class="wrapper">
+    <h1>Event Ticket</h1>
+
+    <form id="ticketForm">
+      <div class="field">
+        <label for="firstName">First Name</label>
+        <input id="firstName" name="firstName" type="text" required>
+      </div>
+
+      <div class="field">
+        <label for="lastName">Last Name</label>
+        <input id="lastName" name="lastName" type="text" required>
+      </div>
+
+      <div class="field full">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+
+      <div class="field">
+        <label for="attendeeType">Type</label>
+        <select id="attendeeType" name="attendeeType" required>
+          <option value="">Choose one</option>
+          <option value="student">Student</option>
+          <option value="guest">Guest</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="eventDate">Event Date</label>
+        <input id="eventDate" name="eventDate" type="date" required>
+      </div>
+
+      <div class="field full" id="conditionalField" hidden>
+        <label for="conditionalInput" id="conditionalLabel"></label>
+        <input id="conditionalInput" name="conditionalInput" type="text">
+      </div>
+
+      <button class="full" type="submit">Create Ticket</button>
+    </form>
+
+    <section id="errors" aria-live="polite"></section>
+    <section id="output" aria-live="polite"></section>
+  </main>
+</body>
+</html>
