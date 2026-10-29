@@ -27,8 +27,8 @@ updateNotesField();
 // Ensure they choose a date later than the current date
 function isPastDate(value) {
   const today = new Date();
-   const chosen = new Date(value + "T00:00:00");
-  return chosen <= new Date(today.toDateString());
+  const chosen = new Date(value);
+  return chosen < today;
 }
 
 function getSelectedCampuses() {
@@ -52,7 +52,7 @@ form.addEventListener("submit", function (event) {
 
   // Validate the input
   // Let the user know to select at least one campus
-    if(selectedCampuses.length=== 0){
+    if(selectedCampuses=== 0){
       output.textContent="Please choose at least one campus";
       return;
     }
