@@ -27,8 +27,8 @@ updateNotesField();
 // Ensure they choose a date later than the current date
 function isPastDate(value) {
   const today = new Date();
-  const chosen = new Date(value);
-  return chosen < today;
+   const chosen = new Date(value + "T00:00:00");
+  return chosen <= new Date(today.toDateString());
 }
 
 function getSelectedCampuses() {
