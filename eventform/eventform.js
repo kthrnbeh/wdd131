@@ -14,12 +14,18 @@ const input =document.querySelector("#conditionalInput");
 attendeeType.addEventListener('change',()=> {
    const selectedType= attendeeType.value
     console.log(selectedType)
-    if(selectedType ==='student'){
+    if(selectedType ==='student' ){
         conditional.hidden=false;
+        label.textContent = "Student I#";
         console.log("Student selected.")
+        if (input.value.length !==9){
+            console.log("Student I# must have 9 digits");
+
+        }
     }
     else if (selectedType === "guest"){
         conditional.hidden =false;
+        label.textContent = "Access Code";
         console.log("Guest Selected.")
     }
     else{
