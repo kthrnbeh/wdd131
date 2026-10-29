@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Ticket</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="eventform.css">
+  <script src="eventform.js" defer></script>
+  <!-- TODO: Add a favicon link after you create or choose a favicon file. -->
+</head>
+<body>
+  <main class="wrapper">
+    <h1>Event Ticket</h1>
+    <form id="ticketForm">
+      <div class="field">
+        <label for="firstName">First Name</label>
+        <input id="firstName" name="firstName" type="text" required>
+      </div>
+      <div class="field">
+        <label for="lastName">Last Name</label>
+        <input id="lastName" name="lastName" type="text" required>
+      </div>
+      <div class="field full">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <div class="field">
+        <label for="attendeeType">Type</label>
+        <select id="attendeeType" name="attendeeType" required>
+          <option value="">Choose one</option>
+          <!-- TODO: Add Student and Guest options with useful values. -->
+        </select>
+      </div>
+      <div class="field">
+        <label for="eventDate">Event Date</label>
+        <input id="eventDate" name="eventDate" type="date" required>
+        <!-- TODO: In JavaScript, require this date to be later than today. -->
+      </div>
+      <!-- TODO: Add a hidden div here for the Student # or Access Code input. -->
+      <button class="full" type="submit">Create Ticket</button>
+    </form>
+    <!-- TODO: Display submission errors below the form. -->
+    <section id="errors" aria-live="polite"></section>
+    <!-- TODO: Display ticket information after a successful submission. -->
+    <section id="output" aria-live="polite"></section>
+  </main>
+</body>
+</html>
