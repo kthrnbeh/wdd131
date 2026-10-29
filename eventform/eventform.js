@@ -2,12 +2,18 @@ const form = document.querySelector("#ticketForm");
 const attendeeType = document.querySelector("#attendeeType");
 const errors = document.querySelector("#errors");
 const output = document.querySelector("#output");
+const conditional=document.querySelector("#conditionalField");
+const label =document.querySelector("#conditionalLabel");
+const input =document.querySelector("#conditionalInput");
 
 // TODO: Select the hidden Student/Guest div and its label/input after adding them to the HTML.
 
 // TODO: Add a change listener to attendeeType.
 // For Student, show a Student # input and require exactly 9 digits.
 // For Guest, show an Access Code input and require "EVENT131".
+attendeeType.addEventListener('change',()=> {
+    console.log("selection changed.")
+})
 
 // TODO: Set the date input's minimum to today, then validate that the chosen date
 // is later than today when the form is submitted.
