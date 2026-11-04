@@ -8,7 +8,7 @@ const Character = {
   attacked(){
     this.health -=20;
 },
- levelup(){
+ levelUp(){
     this.level +=1;
   }
 };
