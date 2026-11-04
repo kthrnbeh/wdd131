@@ -20,7 +20,7 @@ const aCourse = {
     }
   ],        
 
-  enrollStudent(sectionNum) {
+  enrollStudent: function (sectionNum) {
     const sectionIndex = this.sections.findIndex(
       (section) => section.sectionNum == sectionNum
     );
