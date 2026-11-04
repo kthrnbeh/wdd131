@@ -13,8 +13,10 @@
     margin: 100px auto;
   }
 
-  .image{
-    width: 400px;
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
     border-radius: 15px 15px 0 0;
     }
 
