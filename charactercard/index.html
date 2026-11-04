@@ -3,28 +3,43 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS OBJECTS</title>
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Put Page Title Here">
+    <meta property="og:description" content="Put Page Description Here">
+    <meta property="og:url" content="https://yourURLofPage.here">
+    <meta property="og:image" content="https://yourURLofSocialPreviewImageHere.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Put Page Title Here">
+    <meta name="twitter:description" content="Put Page Description Here">
+    <meta name="twitter:image" content="https://yourURLofSocialPreviewImageHere.png">
+
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+    <title>Character Card</title>
     <link rel="stylesheet" href="character.css">
     <script src="character.js" defer></script>
   </head>
   <body>
-
     <main class="card">
       <img class="image" src="" alt="Character image">
       <h1 id="characterName" class="name"></h1>
-      
-  
-    
-    <div class="stats">
+
+      <div class="stats">
         <p>Class: <span id="characterClass"></span></p>
         <p>Level: <span id="characterLevel"></span></p>
         <p>Health: <span id="characterHealth"></span></p>
-    </div>
-    <div class="buttons">
-      <button id="attacked">ATTACK</button>
-      <button id="levelUp">LEVEL UP</button>
-    </div>
+      </div>
+      <div class="buttons">
+        <button id="attacked">ATTACK</button>
+        <button id="levelUp">LEVEL UP</button>
+      </div>
     </main>
-    
   </body>
 </html>
