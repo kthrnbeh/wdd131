@@ -6,7 +6,13 @@ const Character = {
   health: 100,
   image: 'img/snortleblat.png',
   attacked(){
-    this.health -=20;
+    if(this.health > 0){
+        this.health -= 20;
+    }
+    if(this.health ==0){
+        console.log("Character has been defeated!");
+        alert("Character has been defeated!");
+    }
 },
  levelUp(){
     this.level +=1;
