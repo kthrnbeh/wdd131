@@ -15,3 +15,7 @@ const Character = {
 document.querySelector('#characterName').textContent = Character.name;
 document.querySelector('#characterLevel').textContent = Character.level;
 document.querySelector('#characterHealth').textContent = Character.health;
+
+const characterImage = document.querySelector('.image');
+characterImage.setAttribute('src', Character.image);
+characterImage.setAttribute('alt', `Image of ${Character.name}`);
