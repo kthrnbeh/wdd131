@@ -7,16 +7,17 @@ const Character = {
   image: 'img/snortleblat.png',
   attacked(){
     if(this.health > 0){
-        this.health -= 20;
+        this.health -= 20; 
+        
+        if(this.health ==0){
+            console.log("Character has been defeated!");
+            alert("Character has been defeated!");
     }
-    if(this.health ==0){
-        console.log("Character has been defeated!");
-        alert("Character has been defeated!");
     }
+   
 },
  levelUp(){
     this.level +=1;
-    this.health += 20;
   }
 };
 document.querySelector('#characterName').textContent = Character.name;
