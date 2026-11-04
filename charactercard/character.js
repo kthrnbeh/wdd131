@@ -52,10 +52,10 @@ function renderSections(sections) {
 document.querySelector('#courseName').textContent = aCourse.name;
 document.querySelector('#courseCode').textContent = aCourse.code;
 
-const courseImage = document.querySelector('img');
-courseImage.setAttribute('src', aCourse.logo);
-courseImage.setAttribute('alt', aCourse.name);
-courseImage.style.width = '100px';
+const characterImage = document.querySelector('img');
+characterImage.setAttribute('src', Monster.image);
+characterImage.setAttribute('alt', `Image of ${Monster.name}`);
+characterImage.style.width = '100px';
 
 renderSections(aCourse.sections);
 
