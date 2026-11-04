@@ -19,3 +19,9 @@ document.querySelector('#characterHealth').textContent = Character.health;
 const characterImage = document.querySelector('.image');
 characterImage.setAttribute('src', Character.image);
 characterImage.setAttribute('alt', `Image of ${Character.name}`);
+document.querySelector('#attacked').addEventListener('click', () => {
+    Character.attacked();
+});
+document.querySelector('#levelUp').addEventListener('click', () => {
+    Character.levelUp();
+});
