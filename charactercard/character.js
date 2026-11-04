@@ -16,6 +16,7 @@ const Character = {
 },
  levelUp(){
     this.level +=1;
+    this.health += 20;
   }
 };
 document.querySelector('#characterName').textContent = Character.name;
