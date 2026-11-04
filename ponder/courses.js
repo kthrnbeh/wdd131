@@ -19,6 +19,11 @@ const aCourse = {
       instructor: 'Sis A'
     }
   ],
+     
+    enrollStudent: function () {
+        console.log('student enrolled');
+      }
+            
 
   enrollStudent(sectionNum) {
     const sectionIndex = this.sections.findIndex(
