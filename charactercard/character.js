@@ -14,7 +14,9 @@ const Character = {
 };
 document.querySelector('#characterName').textContent = Character.name;
 document.querySelector('#characterLevel').textContent = Character.level;
-document.querySelector('#characterHealth').textContent = Character.health
+document.querySelector('#characterHealth').textContent = Character.health;
+document.querySelector('#characterClass').textContent = Character.class;
+document.querySelector('#characterSpecies').textContent = Character.species;
 
 const characterImage = document.querySelector('.image');
 characterImage.setAttribute('src', Character.image);
