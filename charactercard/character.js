@@ -12,5 +12,6 @@ const Character = {
     this.level +=1;
   }
 };
-
-  
+document.querySelector('#characterName').textContent = Character.name;
+document.querySelector('#characterLevel').textContent = Character.level;
+document.querySelector('#characterHealth').textContent = Character.health;
