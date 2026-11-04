@@ -4,7 +4,7 @@ const Character = {
   class: 'Swamp Beast Diplomat',
   level: 8,
   health: 100,
-  image: 'img/snorleblat.png',
+  image: 'img/snortleblat.png',
   attacked(){
     this.health -=20;
 },
