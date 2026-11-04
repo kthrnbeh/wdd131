@@ -2,7 +2,7 @@
 const aCourse = {
     code: 'CSE121b',
     name: 'Javascript Language',
-    logo: 'images/js-logo.png'
+    logo: 'images/js-logo.png',
     
     sections: [
         { sectionNum: 1, roomNum: 'STC 353', enrolled: 26, days: 'TTh', instructor: 'Bro T'},
@@ -18,3 +18,5 @@ document.querySelector('#courseCode').textContent = aCourse.code;
 document.querySelector('img').setAttribute('src', aCourse.logo);
 document.querySelector('img').setAttribute('alt', aCourse.name);
 document.querySelector('img').style.width ='100px';
+
+console.log(aCourse.sections[1]);
