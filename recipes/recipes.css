@@ -70,3 +70,9 @@ h3{
 .recipe-description{
     display: none;
 }
+
+@media screen and (min-width:550px){
+    .recipe-description{
+        display: block;
+    }
+}
