@@ -18,9 +18,12 @@ img{
 .site-logo {
     display: flex;
     align-items:center;
+    color:black;
+    text-decoration: none;
 }
 .site-logo img{
-    width: 100px;
+    width: 75px;
+
 }
 .social {
     display: flex;
