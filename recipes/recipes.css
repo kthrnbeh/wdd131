@@ -11,3 +11,11 @@ body{
 img{
     max-width:  100%;
 }
+.sit-header{
+    display:flex;
+    justify-content:center;
+}
+.site-logo {
+    display: flex;
+    align-items:center;
+}
