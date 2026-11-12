@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A collection of simple and delicious recipes.">
+  <title>Recipe Book</title>
+  <link rel="stylesheet" href="recipes.css">
+
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Recipe Book">
+  <meta property="og:description" content="A collection of simple and delicious recipes.">
+  <meta property="og:url" content="https://example.com/recipes/">
+  <meta property="og:image" content="social-preview-image.png">
+
+  <!-- X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Recipe Book">
+  <meta name="twitter:description" content="A collection of simple and delicious recipes.">
+  <meta name="twitter:image" content="social-preview-image.png">
+
+  <!-- One favicon (ICO works everywhere) -->
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- One Apple Touch Icon (iOS home screen) -->
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-logo" href="recipes.html">
+      <img src="recipe-book.png" alt="Recipe Book logo">
+      <span>Recipe Book</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="recipes.html">Home</a>
+      <a href="#recipes">Recipes</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">Find your next favorite recipe</h1>
+      <p>Simple recipes for every occasion.</p>
+
+      <form class="search-form" action="#recipes" method="get">
+        <label for="recipe-search">Search recipes</label>
+        <input type="search" id="recipe-search" name="q" placeholder="Search recipes...">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section id="recipes" class="recipes" aria-labelledby="recipes-title">
+      <h2 id="recipes-title">Featured recipes</h2>
+      <article class="recipe-card">
+        <img src="apple-crisp.jpg" alt="Warm apple crisp in a baking dish">
+        <div class="recipe-card-content">
+          <p class="recipe-category">Dessert</p>
+          <h3>Apple Crisp</h3>
+          <p>A warm, comforting dessert with tender apples and a crisp topping.</p>
+          <a href="#apple-crisp">View recipe</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-title">
+      <h2 id="about-title">About Recipe Book</h2>
+      <p>Discover easy recipes and inspiration to make something delicious at home.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Recipe Book</p>
+  </footer>
+</body>
+</html>
