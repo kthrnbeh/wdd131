@@ -82,6 +82,20 @@ h1{
     display: none;
     margin:0;
 }
+.recipe-card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.recipe-category{
+    display:inline-block;
+    margin:0;
+    padding:0.2em 0.35em;
+    border: 1px solid #888;
+    background-color: white;
+    font-size: 0.9rem;
+}
+
 .rating{
     display: flex;
     gap:0.1em;
