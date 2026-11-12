@@ -34,7 +34,7 @@ flex-direction: column;
 }
 .gallery > *{
     flex:1 1 460px;
-    
+
 }
 hr{
 margin-top: 50px;
@@ -47,5 +47,11 @@ margin-top: 50px;
     }
     .media-card{
         flex-direction: row;
+    }
+    .media-card img {
+        flex: 0 1 250px;
+    }
+    .media-card-content {
+        flex: 0 1 60px;
     }
 }
