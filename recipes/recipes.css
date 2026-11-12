@@ -67,3 +67,6 @@ h3{
 .recipe-card > img {
     width: 100%;
 }
+.recipe-description{
+    display: none;
+}
