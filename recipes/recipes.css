@@ -106,7 +106,9 @@ h3{
         width:50%
     }
     .recipe-card-content{
-        flex: 1;
+        display: flex;
+        flex-direction: column;
+        
     }
     .site-footer{
         flex-direction: row;
