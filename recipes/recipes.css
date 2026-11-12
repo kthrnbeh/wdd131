@@ -19,3 +19,6 @@ img{
     display: flex;
     align-items:center;
 }
+.site-logo img{
+    width: 100px;
+}
