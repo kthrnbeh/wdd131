@@ -108,4 +108,15 @@ h3{
     .recipe-card-content{
         flex: 1;
     }
+    .site-footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .attribution{
+        order:1;
+    }
+    .social{
+        order:2;
+    }
 }
