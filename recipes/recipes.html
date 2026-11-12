@@ -12,50 +12,38 @@
   <meta property="og:title" content="Recipe Book">
   <meta property="og:description" content="A collection of simple and delicious recipes.">
   <meta property="og:url" content="https://example.com/recipes/">
-  <meta property="og:image" content="social-preview-image.png">
+  <meta property="og:image" content="images/recipe-book.png">
 
   <!-- X Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Recipe Book">
   <meta name="twitter:description" content="A collection of simple and delicious recipes.">
-  <meta name="twitter:image" content="social-preview-image.png">
+  <meta name="twitter:image" content="images/recipe-book.png">
 
   <!-- One favicon (ICO works everywhere) -->
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="images/recipe-book.png">
 
   <!-- One Apple Touch Icon (iOS home screen) -->
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="images/recipe-book.png">
 </head>
 <body>
   <header class="site-header">
     <a class="site-logo" href="recipes.html">
-      <img src="recipe-book.png" alt="Recipe Book logo">
+      <img src="images/recipe-book.png" alt="Recipe Book logo">
       <span>Recipe Book</span>
     </a>
-
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="recipes.html">Home</a>
-      <a href="#recipes">Recipes</a>
-      <a href="#about">About</a>
-    </nav>
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="page-title">
-      <h1 id="page-title">Find your next favorite recipe</h1>
-      <p>Simple recipes for every occasion.</p>
-
-      <form class="search-form" action="#recipes" method="get">
+    <form class="search-form">
         <label for="recipe-search">Search recipes</label>
-        <input type="search" id="recipe-search" name="q" placeholder="Search recipes...">
-        <button type="submit">Search</button>
-      </form>
-    </section>
-
-    <section id="recipes" class="recipes" aria-labelledby="recipes-title">
-      <h2 id="recipes-title">Featured recipes</h2>
+        <input type="search" id="recipe-search" placeholder="Find a recipe">
+        <button type ="submit"> 
+            <img src="images/search.svg" alt="search">
+        </button>
+    </form>
       <article class="recipe-card">
-        <img src="apple-crisp.jpg" alt="Warm apple crisp in a baking dish">
+        <img src="images/apple-crisp.jpg" alt="Warm apple crisp in a baking dish">
         <div class="recipe-card-content">
           <p class="recipe-category">Dessert</p>
           <h3>Apple Crisp</h3>
