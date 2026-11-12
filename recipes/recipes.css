@@ -80,6 +80,12 @@ h3{
 }
 .recipe-description{
     display: none;
+    margin:0;
+}
+.rating{
+    display: flex;
+    gap:0.1em;
+    margin: bottom 0.5em;;
 }
 .site-footer{
     display: flex;
@@ -108,7 +114,7 @@ h3{
     .recipe-card-content{
         display: flex;
         flex-direction: column;
-        
+
     }
     .site-footer{
         flex-direction: row;
