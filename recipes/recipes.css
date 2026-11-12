@@ -86,4 +86,17 @@ h3{
     .recipe-description{
         display: block;
     }
+    .site-logo img{
+        width:100px;
+    }
+    .recipe-card{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .recipe-card > img{
+        width:50%
+    }
+    .recipe-card-content{
+        flex: 1;
+    }
 }
