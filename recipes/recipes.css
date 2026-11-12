@@ -62,8 +62,12 @@ img{
     background-color: white;
 }
 h3{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(161, 205, 232)
+    margin: 1em 0 0.25em;
+    font-family:"Amatic SC", cursive;
+    font-size: 1.8rem; 
+    color:#008ed6;
+    text-transform: uppercase;
+
 }
 .recipe-card {
     display: flex;
