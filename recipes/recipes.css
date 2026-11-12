@@ -21,6 +21,9 @@ img{
     color:black;
     text-decoration: none;
 }
+.site-logo span{
+    font-family: "Amatic SC", cursive;
+}
 .site-logo img{
     width: 75px;
 
