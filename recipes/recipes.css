@@ -22,3 +22,7 @@ img{
 .site-logo img{
     width: 100px;
 }
+.social {
+    display: flex;
+    gap: 0.25em;
+}
