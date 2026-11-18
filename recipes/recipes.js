@@ -360,6 +360,7 @@ function difficultyTemplate(rating) {
 
 function recipesTemplate(recipes) {
     return `<div class="recipes-card">
+    <img src="${recipes.image}" alt"${recipes.name}">
   <div class="recipes-content">
     <h2>${recipes.name}</h2>
     <div class="recipes-tags">
