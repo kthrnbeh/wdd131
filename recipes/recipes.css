@@ -93,7 +93,7 @@ h1{
 .rating{
     display: flex;
     gap:0.1em;
-    margin: bottom 0.5em;;
+    margin-bottom: 0.5em;
 }
 .site-footer{
     display: flex;

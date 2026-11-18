@@ -282,17 +282,16 @@ const recipes = [
 ]           
 let recipeContainer=document.querySelector('#recipe-container');
 let recipeSearch=document.querySelector("#recipe-search");
-let recipeForum=document.querySelector("#recipe-search-form")
+let recipeForm=document.querySelector("#recipe-search-form");
 
 console.log(recipeContainer);
 console.log(recipeSearch);
-console.log(recipeForum);
-let button =document.querySelector("button");
-button.addEventListener('click',search);
+console.log(recipeForm);
 let randomNum =Math.floor(Math.random()*recipes.length);
 console.log(randomNum);
 
-function search() {
+function search(event) {
+    event?.preventDefault();
 
     let recipeQuery = recipeSearch.value;
 
@@ -303,7 +302,7 @@ function search() {
             recipes.tags.find(tag => tag.toLowerCase().includes(recipeQuery.toLowerCase()))
         );
     })
-    console.log(filteredrecipess);
+    console.log(filteredRecipes);
     
  let sortedRecipes = filteredRecipes.sort(compareRecipes);
     function compareRecipes(a,b) {
@@ -324,18 +323,7 @@ function search() {
 }
 
 
-let input = recipeSearch;
-
-
-button.addEventListener('click', search);
-
-/* for the enter key to work on search - not just clicking the search button */
-input.addEventListener('keypress', handleEnter);
-function handleEnter(event) {
-  if (event.key === 'Enter') {
-    search();
-  }
-}
+recipeForm.addEventListener('submit', search);
 
 function tagTemplate(tags) {
     return tags.map((tag)=> `<button>${tag}</button>`).join(' ');
@@ -382,4 +370,3 @@ function init() {
 }
 
 init();
-                
