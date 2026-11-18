@@ -107,9 +107,9 @@ function search() {
     })
 }
 
-let hikeContainer = document.querySelector('#hike-container');
+
 let input = document.querySelector('#search');
-let button = document.querySelector('button');
+
 
 button.addEventListener('click', search);
 
@@ -120,9 +120,6 @@ function handleEnter(event) {
     search();
   }
 }
-
-let randomNum = Math.floor(Math.random() * hikes.length);
-console.log(randomNum);
 
 function tagTemplate(tags) {
     return tags.map((tag)=> `<button>${tag}</button>`).join(' ');
