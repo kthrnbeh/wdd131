@@ -1,13 +1,15 @@
 nums=[12,10,8,3];
+function compareFN(a,b) {
+  if (a < b) {
+    return -1;
+  } else if (a > b) {
+    return 1;
+  }
+  return 0;
+}
 console.log(nums.sort(compareFN));
 
-//function compareFn(a,b) {
-  //if (a < b) {
-   // return -1;
- // } else if (a > b) {
-   // return 1;
-  //}
- //return 0;
+
 
 const simpleList = ["oranges", "grapes", "lemons", "apples", "Bananas", "watermelons", "coconuts", "broccoli", "mango"];
 let simpleSort =simpleList.sort();
@@ -88,3 +90,11 @@ let filteredList= animals.filter(searchList);
 function searchList(item){
     return item.name.toLocaleLowerCase().includes(query.toLowerCase());
 }
+console.log(filteredList);
+let queryTrait = "strong";
+let filteredTraits= animals.filter(searchTraits);
+function searchTraits(item){
+    return item.traits.find(trait => trait.toLowerCase().includes(queryTrait.toLowerCase()));
+}
+console.log(filteredTraits);
+
