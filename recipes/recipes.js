@@ -280,7 +280,13 @@ const recipes = [
 		rating: 4
 	}
 ]           
-let recipeContainer=document.querySelector('#recipe-card');
+let recipeContainer=document.querySelector('#recipe-container');
+let recipeSearch=document.querySelector("#recipe-search");
+let recipeForum=document.querySelector("#recipe-search-form")
+
+console.log(recipeContainer);
+console.log(recipeSearch);
+console.log(recipeForum);
 let button =document.querySelector("button");
 button.addEventListener('click',search);
 let randomNum =Math.floor(Math.random()*recipes.length);
