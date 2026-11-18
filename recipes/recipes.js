@@ -280,27 +280,27 @@ const recipes = [
 		rating: 4
 	}
 ]           
-let hikeContainer=document.querySelector('#hike-container');
+let recipeContainer=document.querySelector('#recipe-card');
 let button =document.querySelector("button");
 button.addEventListener('click',search);
-let randomNum =Math.floor(Math.random()*hikes.length);
+let randomNum =Math.floor(Math.random()*recipes.length);
 console.log(randomNum);
 
 function search() {
 
-    let hikeQuery = document.querySelector('#search').value;
+    let recipeQuery = document.querySelector('#search-form').value;
 
-    let filteredHikes = hikes.filter(function(hike){
+    let filteredRecipes = recipes.filter(function(recipes){
         return ( 
-            hike.name.toLowerCase().includes(hikeQuery.toLowerCase()) ||
-            hike.description.toLowerCase().includes(hikeQuery.toLowerCase()) || 
-            hike.tags.find(tag => tag.toLowerCase().includes(hikeQuery.toLowerCase()))
+            recipes.name.toLowerCase().includes(recipesQueryQuery.toLowerCase()) ||
+            recipes.description.toLowerCase().includes(recipesQuery.toLowerCase()) || 
+            recipes.tags.find(tag => tag.toLowerCase().includes(recipesQuery.toLowerCase()))
         );
     })
-    console.log(filteredHikes);
+    console.log(filteredrecipess);
     
- let sortedHikes = filteredHikes.sort(compareHikes);
-    function compareHikes(a,b) {
+ let sortedRecipes = filteredRecipes.sort(compareRecipes);
+    function compareRecipes(a,b) {
     if (a.difficulty < b.difficulty) {
         return -1;
     } else if (a.difficulty > b.difficulty) {
@@ -310,10 +310,10 @@ function search() {
     }
 
     // clear out any previous content
-    hikeContainer.innerHTML = '';
+    recipeContainerContainer.innerHTML = '';
     // output onto screen
-    sortedHikes.forEach(function(hike){
-      renderHike(hike);
+    sortedRecipes.forEach(function(recipes){
+      renderrecipes(recipes);
     })
 }
 
@@ -352,26 +352,26 @@ function difficultyTemplate(rating) {
     return html
   }
 
-function hikesTemplate(hike) {
-    return `<div class="hike-card">
-  <div class="hike-content">
-    <h2>${hike.name}</h2>
-    <div class="hike-tags">
-      ${tagTemplate(hike.tags)}
+function recipesTemplate(recipes) {
+    return `<div class="recipes-card">
+  <div class="recipes-content">
+    <h2>${recipes.name}</h2>
+    <div class="recipes-tags">
+      ${tagTemplate(recipes.tags)}
     </div>
-    <p>${hike.description}</p>
-    <p>${difficultyTemplate(hike.difficulty)}</p>
+    <p>${recipes.description}</p>
+    <p>${difficultyTemplate(recipes.difficulty)}</p>
   </div>
 </div>`
 }
 
-function renderHike(hike) {
-    let html = hikesTemplate(hike);
-    hikeContainer.innerHTML += html
+function renderrecipes(recipes) {
+    let html = recipessTemplate(recipes);
+    recipesContainer.innerHTML += html
 }
 
 function init() {
-    renderHike(hikes[randomNum]);
+    renderrecipes(recipes[randomNum]);
 }
 
 init();
