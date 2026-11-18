@@ -79,7 +79,7 @@ console.log(randomNum);
 
 function search() {
 
-    let hikeQuery = document.querySelector('#serch').value;
+    let hikeQuery = document.querySelector('#search').value;
 
     let filteredHikes = hikes.filter(function(hike){
         return ( 
