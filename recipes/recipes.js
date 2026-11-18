@@ -350,7 +350,7 @@ function recipesTemplate(recipes) {
     return `<div class="recipe-card">
     <img src="${recipes.image}" alt="${recipes.name}">
   <div class="recipe-card-content">
-    <h2>${recipes.name}</h2>
+    <h1>${recipes.name}</h1>
     <div class="recipes-tags">
       ${tagTemplate(recipes.tags)}
     </div>
