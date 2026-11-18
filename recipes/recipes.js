@@ -294,7 +294,7 @@ console.log(randomNum);
 
 function search() {
 
-    let recipeQuery = document.querySelector('#search-form').value;
+    let recipeQuery = recipeSearch.value;
 
     let filteredRecipes = recipes.filter(function(recipes){
         return ( 
@@ -324,7 +324,7 @@ function search() {
 }
 
 
-let input = document.querySelector('#search');
+let input = recipeSearch;
 
 
 button.addEventListener('click', search);
@@ -372,8 +372,8 @@ function recipesTemplate(recipes) {
 }
 
 function renderrecipes(recipes) {
-    let html = recipessTemplate(recipes);
-    recipesContainer.innerHTML += html
+    let html = recipesTemplate(recipes);
+    recipeContainer.innerHTML += html
 }
 
 function init() {
