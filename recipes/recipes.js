@@ -298,25 +298,25 @@ function search() {
 
     let filteredRecipes = recipes.filter(function(recipes){
         return ( 
-            recipes.name.toLowerCase().includes(recipesQueryQuery.toLowerCase()) ||
-            recipes.description.toLowerCase().includes(recipesQuery.toLowerCase()) || 
-            recipes.tags.find(tag => tag.toLowerCase().includes(recipesQuery.toLowerCase()))
+            recipes.name.toLowerCase().includes(recipeQuery.toLowerCase()) ||
+            recipes.description.toLowerCase().includes(recipeQuery.toLowerCase()) || 
+            recipes.tags.find(tag => tag.toLowerCase().includes(recipeQuery.toLowerCase()))
         );
     })
     console.log(filteredrecipess);
     
  let sortedRecipes = filteredRecipes.sort(compareRecipes);
     function compareRecipes(a,b) {
-    if (a.difficulty < b.difficulty) {
+    if (a.rating < b.rating) {
         return -1;
-    } else if (a.difficulty > b.difficulty) {
+    } else if (a.rating > b.rating) {
         return 1;
     }
     return 0;
     }
 
     // clear out any previous content
-    recipeContainerContainer.innerHTML = '';
+    recipeContainer.innerHTML = '';
     // output onto screen
     sortedRecipes.forEach(function(recipes){
       renderrecipes(recipes);
@@ -341,17 +341,17 @@ function tagTemplate(tags) {
     return tags.map((tag)=> `<button>${tag}</button>`).join(' ');
 }
 
-function difficultyTemplate(rating) {
+function ratingTemplate(rating) {
 		let html = `<span
 	class="rating"
 	role="img"
 	aria-label="Rating: ${rating} out of 5"
->  Difficulty: `
+>  Rating: `
     for (let i = 1; i <= 5; i++) {
       if (i <= rating) {
-        html += `<span aria-hidden="true" class="icon-boot"> 🥾</span>`
+        html += `<span aria-hidden="true" class="icon-boot"> ⭐</span>`
       } else {
-        html += `<span aria-hidden="true" class="icon-empty">▫️</span>`
+        html += `<span aria-hidden="true" class="icon-empty">☆</span>`
       }			
     }
     html += `</span>`
@@ -359,15 +359,15 @@ function difficultyTemplate(rating) {
   }
 
 function recipesTemplate(recipes) {
-    return `<div class="recipes-card">
-    <img src="${recipes.image}" alt"${recipes.name}">
-  <div class="recipes-content">
+    return `<div class="recipe-card">
+    <img src="${recipes.image}" alt="${recipes.name}">
+  <div class="recipe-card-content">
     <h2>${recipes.name}</h2>
     <div class="recipes-tags">
       ${tagTemplate(recipes.tags)}
     </div>
     <p>${recipes.description}</p>
-    <p>${difficultyTemplate(recipes.difficulty)}</p>
+    <p>${ratingTemplate(recipes.rating)}</p>
   </div>
 </div>`
 }
