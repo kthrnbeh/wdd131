@@ -224,7 +224,7 @@ nav a:hover {
 /* Bloom & Beyond custom wireframe styling */
 .wireframe-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
   align-items: start;
   gap: 2rem;
 }
